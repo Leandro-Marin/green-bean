@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Lora&family=Staatliches&display=swap');
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    /**** menu ****/
+  nav {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+    padding-right: 4.5%;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+    font-family: Lora, serif;
+    border-left: 1px solid black;
+  }
+  
+  nav .openMenu {
+    font-size: 3vw;
+    margin: 20px;
+    display: none;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 3vw;
+    display: none;
+  }
+ 
+  nav .logo {
+    margin: 6px;
+    padding-left: 4.5%;
+  }
+    
+    /****************** MAIN **************/
+
+    .main-centrale {
+        display: flex;
+        padding: 0 63px;
+        border-bottom: 1px solid black;
+    }
+    
+    .content-1 {
+        width: 50%;
+        justify-content: center;
+        padding: 37px 28px 40px 0;
+    }
+
+    .content-2 {
+        width: 50%;
+        border-left: 1px solid black;
+        float: right;
+        margin-left: 3.6%;
+    }
+
+    .content-2 img {
+        width: 88%;
+        height: auto;
+        margin: 10%;
+    }
+    
+    .main-content {
+        font-family: Staatliches, sans-serif;
+        font-size: 2vw;
+    }
+
+    .main-content p, .main-content li {
+        font-family: Lora, serif;
+        font-size: 3vw;
+        color: black;
+        list-style-position: inside;
+    }
+    
+
+    /** info **/
+    .info-ricetta {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 10%;
+        background-color: #9FFFAA;
+        width: 100%;
+    }
+
+    .info-ricetta p {
+        font-size: 3vw;
+        font-family: Lora, sans-serif;
+    }
+
+    /** preparazione **/
+    .preparazione {
+        font-family: Staatliches, sans-serif;
+        font-size: 2vw;
+        padding: 4% 10%;
+        border-top: 1px solid black;
+    }
+
+    .preparazione p {
+        font-size: 3vw;
+        font-family: Lora, sans-serif;
+    }
+
+
+    /** GRID **/
+    .grid {
+        width: 100%;
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    
+    .item img {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .item p{
+        font-size: 3vw;
+        font-family: Lora, serif;
+        padding: 23px;
+    }
+    
+    .item-b {
+        background-color: black;
+    }
+    
+    .item-b p {
+        color: rgb(255, 255, 255);
+    }
+    
+    .item-d, .item-e {
+        background-color: #9FFFAA;
+    }
+
+    /** FOOTER **/
+footer {
+    width: 100%;
+    height: 3%;
+    padding: 9px 63px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer p{
+    font-size: 3vw;
+    font-family: Lora, serif;
+  }
+  
+  .social ul{
+    list-style-type: none;
+  }
+  
+  .social li {
+    display: inline-block;
+    margin-left: 34px;
+  }
+  
+  .social a {
+    font-size: 3vw;
+    font-family: Lora, serif;
+    text-decoration: none;
+    color: black;
+  }
+
+    @media (max-width: 863px) {
+        nav .mainMenu li a {
+          font-size: 5vw;
+        }
+        nav .mainMenu li a {
+          border-left: none;
+        }
+        nav .mainMenu {
+          height: 100vh;
+          position: fixed;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          z-index: 10;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #9FFFAA;
+          transition: top 1s ease 0s;
+          display: none;
+        }
+        nav .mainMenu .closeMenu {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+        nav .openMenu {
+          display: block;
+        }
+        
+        /** main **/
+        .main-centrale {
+            display: flex;
+            flex-direction: column;
+            padding: 0 63px;
+            border-bottom: 1px solid black;
+        }
+        
+        .content-1 {
+            width: 100%;
+            justify-content: center;
+            padding: 37px 28px 40px 0;
+        }
+    
+        .content-2 {
+            width: 100%;
+            border-left: none;
+            float: none;
+            margin-left: 0;
+        }
+    
+        .content-2 img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto 6% auto;
+        }
+        
+        .main-content {
+            font-family: Staatliches, sans-serif;
+            font-size: 5vw;
+        }
+    
+        .main-content p, .main-content li {
+            font-family: Lora, serif;
+            font-size: 5vw;
+            color: black;
+            list-style-position: inside;
+        }
+    
+        /** info **/
+        .info-ricetta {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2% 10%;
+        }
+
+        .info-ricetta p {
+            font-size: 5vw;;
+            margin: 2% 0;
+        }
+
+        /** preparazione **/
+    .preparazione {
+        font-size: 3vw;
+        padding: 4% 10%;
+    }
+
+    .preparazione p {
+        font-size: 5vw;
+    }
+
+        /** animazione **/
+        .animazione span {
+          font-size: 5vw;
+          padding-left: 220px;
+        }
+    
+        /** grid **/
+        .grid {
+          width: 100%;
+          padding: 0 63px;
+          display: grid;
+          grid-template-columns: 100%;
+          place-items: center;
+        }
+    
+        .item {
+          width: 100%;
+          height: auto;
+          padding: 0;
+          margin: 0;
+        }
+    
+        .item img {
+          width: 100%;
+          height: auto;
+        }
+    
+        .item p{
+          text-align: left;
+          font-size: 5vw;
+          font-family: Lora, serif;
+          padding: 5%;
+        }
+    
+        .item-b, .item-e {
+          background-color: black;
+        }
+        
+        .item-b p, .item-e p{
+          color: rgb(255, 255, 255);
+        }
+        
+        .item-d, .item-h {
+          background-color: #9FFFAA;
+        }
+    
+        .item-h p {
+          color: black;
+        }
+    
+    
+        /** foot **/
+        footer {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0;
+        }
+    
+        .social ul {
+          width: 185px;
+          margin-bottom: 6%;
+        }
+    
+        .social ul li {
+          margin: 0 9.5%;
+        }
+      }
