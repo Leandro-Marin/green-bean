@@ -29,7 +29,7 @@
     padding: 15px;
     text-decoration: none;
     color: black;
-    font-size: 3vw;
+    font-size: 1.8vw;
     font-family: Lora, serif;
     border-left: 1px solid black;
   }
@@ -46,8 +46,9 @@
   }
  
   nav .logo {
+    width: 15%;
     margin: 6px;
-    padding-left: 4.5%;
+    padding-left: 3.2%;
   }
 
 /***** HERO ****/
@@ -79,6 +80,7 @@
 
 .main-content img {
   width: 100%;
+  height: 960px;
 }
 
 .main-content p {
@@ -112,7 +114,7 @@
 
 .animazione span {
   font-family: Lora, serif;
-  font-size: 3vw;
+  font-size: 1.8vw;
   color: black;
   padding-left: 350px;
 }
@@ -171,7 +173,7 @@ footer {
 }
 
 footer p{
-  font-size: 3vw;
+  font-size: 1.8vw;
   font-family: Lora, serif;
 }
 
@@ -185,7 +187,7 @@ footer p{
 }
 
 .social a {
-  font-size: 3vw;
+  font-size: 1.8vw;
   font-family: Lora, serif;
   text-decoration: none;
   color: black;
@@ -228,12 +230,20 @@ footer p{
     }
     nav .openMenu {
       display: block;
+      font-size: 5vw;
+    }
+
+    nav .logo {
+      width: 30%;
+      margin: 6px;
+      padding-left: 5%;
     }
     
     /** main **/
     .main-centrale {
       display: flex;
       flex-direction: column;
+      padding: 0 4.5%;
     }
 
     .content-1{
@@ -243,6 +253,7 @@ footer p{
     
     .main-content img {
       width: 100%;
+      height: auto;
     }
     
     .main-content p {
@@ -263,39 +274,53 @@ footer p{
       padding-left: 220px;
     }
 
-    /** grid **/
+   /** grid **/
     .grid {
       width: 100%;
-      padding: 0 63px;
+      padding: 0 4.5%;
       display: grid;
       grid-template-columns: 100%;
-      place-items: center;
+      gap: 0; /* Elimina espacios entre items */
+      margin-bottom: 20px;
+      padding-top: 20px;
     }
 
     .item {
       width: 100%;
       height: auto;
-      padding: 0;
-      margin: 0;
+      min-height: 200px; /* Altura mínima uniforme */
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 0; /* Esquinas rectas */
+      margin: 0; /* Elimina márgenes externos */
     }
 
     .item img {
       width: 100%;
-      height: auto;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+      display: block; /* Elimina espacios fantasma debajo de la imagen */
     }
 
-    .item p{
-      text-align: left;
+    .item p {
+      text-align: center; /* Texto centrado horizontalmente */
       font-size: 5vw;
-      font-family: Lora, serif;
+      font-family: 'Lora', serif;
       padding: 5%;
+      margin: auto; /* Centra verticalmente (junto con flex) */
+      display: flex;
+      align-items: center; /* Centra verticalmente */
+      justify-content: center; /* Centra horizontalmente (redundante con text-align) */
+      height: 100%; /* Ocupa todo el espacio disponible */
     }
 
+    /* Colores de fondo (sin cambios) */
     .item-b, .item-e {
       background-color: black;
     }
-    
-    .item-b p, .item-e p{
+    .item-b p, .item-e p {
       color: rgb(255, 255, 255);
     }
     
@@ -307,8 +332,7 @@ footer p{
       color: black;
     }
 
-
-    /** foot **/
+    /** footer **/
     footer {
       display: flex;
       flex-direction: column-reverse;
@@ -317,13 +341,21 @@ footer p{
       margin-top: 0;
     }
 
+    footer p {
+      font-size: 5vw;
+    }
+
     .social ul {
       width: 185px;
       margin-bottom: 6%;
     }
 
     .social ul li {
-      margin: 0 9.5%;
+      margin: 0 10px;
+    }
+
+    .social a {
+      font-size: 5vw;
     }
   }
   

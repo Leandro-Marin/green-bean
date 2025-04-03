@@ -28,7 +28,7 @@
     padding: 15px;
     text-decoration: none;
     color: black;
-    font-size: 3vw;
+    font-size: 1.8vw;
     font-family: Lora, serif;
     border-left: 1px solid black;
   }
@@ -45,8 +45,9 @@
   }
  
   nav .logo {
+    width: 15%;
     margin: 6px;
-    padding-left: 4.5%;
+    padding-left: 3.2%;
   }
 
     
@@ -84,7 +85,7 @@
   
   .animazione span {
     font-family: Lora, serif;
-    font-size: 3vw;
+    font-size: 1.8vw;
     color: black;
     padding-left: 350px;
   }
@@ -107,6 +108,12 @@
         grid-template-columns: 50% 50%;
         font-size: 3vw;
         font-family: Staatliches, sans serif;
+    }
+
+    .team h1 {
+        font-family: Staatliches, sans-serif;
+        font-size: 1.8vw;
+        color: black;
     }
 
     .team p {
@@ -145,7 +152,7 @@
     }
     
     footer p{
-        font-size: 3vw;
+        font-size: 1.8vw;
         font-family: Lora, serif;
     }
     
@@ -159,7 +166,7 @@
     }
     
     .social a {
-        font-size: 3vw;
+        font-size: 1.8vw;
         font-family: Lora, serif;
         text-decoration: none;
         color: black;
@@ -196,6 +203,13 @@
         }
         nav .openMenu {
           display: block;
+          font-size: 5vw;
+        }
+
+        nav .logo {
+          width: 30%;
+          margin: 6px;
+          padding-left: 5%;
         }
     
         /** animazione **/
@@ -204,10 +218,26 @@
           padding-left: 220px;
         }
 
+        /** testo **/
+      .testo {
+          padding: 3% 6%;
+      }
+        .testo p {
+          font-size: 5vw;
+      }
+
         /** team **/
     .team {
         grid-template-columns: 100%;
     }
+
+    .team h1 {
+      font-size: 5vw;
+  }
+
+  .team p {
+      font-size: 5vw;
+  }
 
     .item-a img, .item-b img, .item-c img{
         margin: 4%;
@@ -228,21 +258,29 @@
         text-align: center;
     }
 
-        /** foot **/
-        footer {
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: center;
-          align-items: center;
-          margin-top: 0;
-        }
-    
-        .social ul {
-          width: 185px;
-          margin-bottom: 6%;
-        }
-    
-        .social ul li {
-          margin: 0 9.5%;
-        }
-      }
+    /** footer **/
+    footer {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+    }
+
+    footer p {
+      font-size: 5vw;
+    }
+
+    .social ul {
+      width: 185px;
+      margin-bottom: 6%;
+    }
+
+    .social ul li {
+      margin: 0 10px;
+    }
+
+    .social a {
+      font-size: 5vw;
+    }
+  }
